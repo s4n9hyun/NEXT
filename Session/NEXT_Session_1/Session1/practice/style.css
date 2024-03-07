@@ -1,45 +1,45 @@
 body {
-  background-color: #222;
+    background-color: #222;
 }
 a:visited {
-  color: #222;
+    color: #222;
 }
 mark {
-  color: #222;
-  background: #f7941e;
+    color: #222;
+    background: yellow;
 }
 li {
-  color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 img {
-  width: 100%;
+    width: 100%;
 }
 .container {
-  width: 88%;
-  color: white;
-  /* background-color: aliceblue; */
-  margin: 0 auto;
-  border: 1px solid #f7941e;
-  padding: 40px;
-  border-radius: 20px;
-  margin: 60px;
+    width: 88%;
+    color: white;
+    /* background-color: aliceblue; */
+    margin: 0 auto;
+    border: 1px solid green;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 60px;
 }
 #contentWrapper {
-  max-width: 430px;
+    max-width: 430px;
 
-  margin: 0 auto;
+    margin: 0 auto;
 }
 p {
-  font-size: 20px;
-  font-weight: 700;
+    font-size: 20px;
+    font-weight: 700;
 }
 b {
-  color: #f7941e;
+    color: yellow;
 }
 h3 {
-  text-align: center;
+    text-align: center;
 }
 .noDot {
-  list-style: none;
-  padding-top: 300px;
+    list-style: none;
+    padding-top: 300px;
 }
