@@ -1,0 +1,192 @@
+.header {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 400px;
+    height: 60px;
+    background-color: rgb(15, 15, 15);
+}
+
+.body {
+    display: flex;
+    align-items: flex-start;
+    border: 1px black solid;
+    width: 400px;
+    height: 610px;
+    flex-direction: column;
+    padding: 10px 10px 10px;
+    background-color: rgb(16, 16, 18);
+    z-index: 8;
+}
+.box {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+    background-color: rgb(24, 23, 29);
+    border-radius: 16px;
+    width: 400px;
+    height: 60px;
+    margin: 3px;
+    z-index: 8;
+    padding: 20px;
+    justify-content: center;
+}
+.firstcontent {
+    width: 300px;
+    height: 35px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    z-index: 9;
+}
+.topleft {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+}
+
+.topright {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+}
+
+.color {
+    background-color: #4e5968;
+}
+#category {
+    height: 40px;
+    width: 40px;
+}
+#first,
+#second {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+#rightarrow {
+    height: 20px;
+    width: 20px;
+}
+
+.box3 {
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
+    height: 50px;
+    /* border: 1px green solid; */
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.font01 {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: Toss Product Sans, Tossface, -apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR, Segoe UI,
+        Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+        Segoe UI Symbol, Noto Color Emoji;
+    color: rgb(150, 150, 150);
+}
+.font02 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-family: Toss Product Sans, Tossface, -apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR, Segoe UI,
+        Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+        Segoe UI Symbol, Noto Color Emoji;
+    color: rgb(52, 123, 222);
+}
+.font {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: Toss Product Sans, Tossface, -apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR, Segoe UI,
+        Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+        Segoe UI Symbol, Noto Color Emoji;
+    color: white;
+}
+
+.font1 {
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 1.5;
+    font-family: Toss Product Sans, Tossface, -apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR, Segoe UI,
+        Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+        Segoe UI Symbol, Noto Color Emoji;
+    color: white;
+}
+.font2 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: Toss Product Sans, Tossface, -apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR, Segoe UI,
+        Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+        Segoe UI Symbol, Noto Color Emoji;
+    color: white;
+}
+#bank {
+    height: 40px;
+    width: 40px;
+}
+#transfer {
+    height: 25px;
+    width: 50px;
+}
+#third {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 370px;
+}
+#showmore {
+    width: 350px;
+}
+#fourth {
+    height: 60px;
+    z-index: 6;
+    /* border: 1px red solid; */
+}
+
+.footer {
+    display: flex;
+    align-items: stretch;
+    border-top: 1px rgb(40, 40, 40) solid;
+    width: 381.5px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(24, 24, 29);
+    z-index: 100;
+    padding: 0px 20px 5px 20px;
+}
+
+.footer_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(24, 24, 29);
+    box-sizing: border-box;
+    z-index: 10;
+    padding: 20px;
+}
+
+.item {
+    height: 40px;
+    width: 40px;
+}
