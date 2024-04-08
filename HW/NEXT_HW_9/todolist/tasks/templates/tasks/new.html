@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block content %}
+<h2>새로 추가하기</h2>
+<form method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">저장</button>
+</form>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block content %}
+<h2>{{ task.title }}</h2>
+<p>내용: {{ task.content }}</p>
+<p>마감 기한: {{ task.deadline }}</p>
+<p>D-day: {{ task.d_day }} 일</p>
+<a href="{% url 'task_list' %}">목록으로 가기</a>
+{% endblock %}

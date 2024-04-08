@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<h2>할 일 목록</h2>
+<ul>
+    {% for task in tasks %}
+    <li>
+        <a href="{% url 'task_detail' task.pk %}">{{ task.title }}</a> - 마감 기한: {{ task.deadline }} - 남은 시간:
+        {{task.d_day }} 일
+        <a href="{% url 'task_update' task.pk %}">수정</a>
+        <a href="{% url 'task_delete' task.pk %}" onclick="return confirm('진짜로?');">삭제</a>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'task_new' %}">할 일 추가하기</a>
+{% endblock %}
