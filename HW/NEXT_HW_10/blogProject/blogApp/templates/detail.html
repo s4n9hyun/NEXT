@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block title %}Article Details{% endblock %} {% block content %}
+<h2>Details</h2>
+<ul>
+    <li>제목 : {{ article.title }}</li>
+    <li>내용 : {{ article.content }}</li>
+    <li>카테고리 : {{ article.category }}</li>
+    <li>작성 시각 : {{ article.created_at|date:"Y-m-d H:i" }}</li>
+</ul>
+<a href="{% url 'list' %}">글 목록으로 가기</a>
+<div class="comments">
+    <h3>Comments</h3>
+    {% for comment in comments %}
+    <p>{{ comment.author }}: {{ comment.content }}</p>
+    <!-- Replies -->
+    {% for reply in comment.replies.all %}
+    <p>&mdash; {{ reply.author }}: {{ reply.content }}</p>
+    {% endfor %}
+    <!-- Reply Form -->
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="parent_id" value="{{ comment.id }}" />
+        <input type="text" name="nickname" placeholder="Your Nickname" required />
+        <textarea name="content" placeholder="Reply to this comment" required></textarea>
+        <button type="submit">Reply</button>
+    </form>
+    {% endfor %}
+    <h4>Add a comment</h4>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="nickname" placeholder="Your Nickname" required />
+        <textarea name="content" placeholder="Your comment" required></textarea>
+        <button type="submit">Post Comment</button>
+    </form>
+</div>
+{% endblock %}
