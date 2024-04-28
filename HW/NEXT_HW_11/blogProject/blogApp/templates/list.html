@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block title %}Article List{% endblock %} {% block content %}
+<div class="container">
+    <h2>글 전체 목록</h2>
+    <div class="articles-list">
+        <ul>
+            {% for article in articles %}
+            <li><a href="{% url 'detail' article.id %}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'new' %}" class="new-article-link">글 쓰러 가기</a>
+    </div>
+
+    <div class="category-links">
+        {% for category, count in category_counts.items %}
+        <a href="{% url 'list_by_category' category %}">{{ category }} ({{ count }})</a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

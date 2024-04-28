@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block title %}New Article{% endblock %} {% block content %}
+<h2>글쓰기 페이지</h2>
+<div class="form-container">
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Title" required />
+        <textarea name="content" placeholder="Content" required></textarea>
+        <select name="category">
+            <option value="취미">취미</option>
+            <option value="음식">음식</option>
+            <option value="프로그래밍">프로그래밍</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
