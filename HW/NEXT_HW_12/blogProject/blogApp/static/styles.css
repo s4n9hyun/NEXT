@@ -1,0 +1,208 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* This ensures padding and borders are included in the total width and height */
+    margin: 0;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+    list-style: none;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.user-menu {
+    display: flex; /* This will align the child elements (links and forms) in a row */
+    align-items: center; /* This will vertically center align the items */
+    justify-content: flex-end; /* This aligns items to the right of the header */
+    gap: 10px; /* Adds space between each element */
+    flex-direction: row;
+}
+
+.user-menu form,
+.user-menu a {
+    margin-right: 10px; /* Provides consistent spacing between the elements */
+}
+
+.user-menu div {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.logout-button:hover {
+    background-color: #ddd;
+}
+
+/* Link Styles */
+a {
+    color: #337ab7;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Article and Category Link Styles */
+.articles-list,
+.category-links {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-links a,
+.new-article-link {
+    color: #007bff;
+    background-color: #e7f5ff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.new-article-link {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+.new-article-link:hover {
+    background-color: #0056b3;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Comments Section Styles */
+.comments {
+    margin-top: 40px;
+}
+
+.comments h3,
+.comment,
+.reply {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.comment,
+.reply {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.reply {
+    margin-left: 20px;
+    border-left: 5px solid #a0a0a0;
+    background-color: #d0e9ff;
+}
+
+/* Form Styles */
+.form-container input[type="text"],
+.form-container textarea,
+.form-container select,
+.form-container button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Consistent padding */
+    margin-bottom: 10px; /* Space between elements */
+    border: 2px solid #008000; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.form-container textarea {
+    resize: vertical; /* Allows vertical resize */
+}
+
+.form-container select,
+.form-container button {
+    height: 48px; /* Explicit height to match the input and textarea, adjust as needed */
+    cursor: pointer; /* Makes it clear they are interactive */
+}
+
+.form-container button {
+    background-color: #008000; /* Green background */
+    color: white; /* Text color */
+    border: none; /* No additional border */
+}
+
+.form-container button:hover {
+    background-color: #006400; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end; /* Aligns children (user-menu) to the right */
+    align-items: center; /* Vertically centers the items in the header */
+}
+
+.user-menu {
+    display: flex;
+    flex-direction: row; /* Ensures items are in a row */
+    align-items: center; /* Centers items vertically within the user-menu */
+    justify-content: center; /* Centers items horizontally within the user-menu */
+    gap: 10px; /* Adds space between each element */
+}
