@@ -13,12 +13,8 @@ function checkUsername() {
     }
 }
 
-// Execute checkUsername function
 checkUsername();
 
-/* Function to set the user's name based on input value */
-// Read value from input
-// Save it to local storage with the key 'username'
 function setUsername() {
     const name = username.value;
     window.localStorage.setItem("username", name);
@@ -27,10 +23,8 @@ function setUsername() {
 }
 
 function resetUsername() {
-    // Remove the username from local storage
     window.localStorage.removeItem("username");
     
-    // Reset the display to show the username input form
     usernameWrapper.style.display = "flex";
     header.innerHTML = "";
 }
