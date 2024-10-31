@@ -1,0 +1,30 @@
+@server = http://localhost:3000
+
+#게시글 조회
+GET {{server}}/bookProject
+
+###게시글 생성
+POST {{server}}/bookProject
+Content-Type: application/json
+
+{
+  "title": "넥스트 재밌다",
+  "author": "이상현",
+  "isAvailable": false
+}
+
+### 특정 게시글 조회
+GET {{server}}/bookProject/1
+
+### 게시글 삭제
+DELETE {{server}}/bookProject/<게시글ID>
+
+### 게시글 수정
+PUT {{server}}/bookProject/<게시글ID>
+Content-Type: application/json
+
+{
+  "title": "어린왕자",
+  "author": "생택쥐페리",
+  "isAvailable": true
+}
